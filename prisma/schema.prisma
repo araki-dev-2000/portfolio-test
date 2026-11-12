@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ここに、設計メモの「5. データ」をもとに、モデルを書きます。
+// 例：
+//
+// model Book {
+//   id        Int      @id @default(autoincrement())
+//   title     String
+//   memo      String?
+//   createdAt DateTime @default(now())
+// }
